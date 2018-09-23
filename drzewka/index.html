@@ -1,0 +1,177 @@
+<html>
+
+<head>
+  <title>Strona o roślinkach</title>
+
+  <style>
+
+  #body {
+
+    background-image: url("drzewa_back.jpg");
+;
+
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+  }
+
+.container {
+  border-style: solid;
+  padding: 10px;
+  box-shadow: 10 10 10;
+  font-family: sans-serif;
+  border-color: white;
+  color: white;
+  font: verdana;
+  font-variant: small-caps;
+  text-align: left;
+  position: relative;
+  height: 300;
+}
+.container h1 {
+  font-size: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-image: url('https://us-east-1.tchyn.io/snopes-production/uploads/2017/06/Dieffenbachia_amoena_poison_fb.jpg?resize=733%2C412');
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.img-box {
+
+  padding: 5px;
+  max-height: 600px;
+  max-width: 600px;
+  opacity: 0.5;
+}
+
+.box-typical {
+  max-width: 300px;
+  font-size: 100px;
+  padding-top: 30;
+  border-style: none;
+  font-family: sans-serif;
+  font: arial;
+}
+
+.button {
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      border-radius: 1px;
+      border: 2px solid black;
+      color: black;
+      display: flex;
+      font-size: 40px;
+      padding: 15px;
+      text-decoration: none;
+      text-shadow: #000000
+    }
+
+    .button:hover {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 15px;
+    }
+
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+  </style>
+</head>
+<body>
+
+<div id="body">
+
+<div class="container">
+  <h1>Roślinki</h1>
+</div>
+
+
+<div class="box-typical">
+  <p>Tutaj będę pisał o roślinach, które znajdują się w moim pokoju.</p>
+  <p>Opiszę rośliny, które mam lub miałem.</p>
+  <p>Te, które żyją i te, które już umarły.</p>
+  <p>Te, które mam, i te, które dopiero będę miał.</p>
+</div>
+
+
+<div class="img-box">
+<img src="https://static.fajnyogrod.pl/media/uploads/images/figowiec-fikus.jpg">
+</div>
+
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Starr_070320-5799_Echinopsis_pachanoi.jpg/800px-Starr_070320-5799_Echinopsis_pachanoi.jpg">
+</div>
+
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Kaktusy_echinocactus_cinnabarinus.jpg">
+</div>
+
+<div class="img-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/California_Scottys_Mountains_Joshua_tree.jpg/1024px-California_Scottys_Mountains_Joshua_tree.jpg">
+</div>
+
+<div class="box-typical">
+  <form action="mailto:piotrekkorsak@gmail.com" method="post" enctype="text/plain">
+  <p>Można pisać maile.</p>
+  <p></p><input type="submit" value="Naciśnij!" class="button"></p>
+</form>
+</div>
+
+
+<!-- DO ZROBIENIA MOŻE - ->
+<div class="box-typical">
+<table> <!- - kreacja tabeli - ->
+    <thead>
+      <tr>
+        <th>Nazwa rośliny</th>
+        <th>Nazwa łacińska</th>
+        <th>Imię rośliny</th>
+        <th>Ciekawostka</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>  <!- - TABLE ROW - ->
+        <td>Imie</td> <!- - TABLE DATA - komórka - ->
+        <td>Nazwisko</td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr> <!- - TABLE ROW - ->
+        <td>Rok</td> <!- - TABLE DATA - komórka - ->
+        <td>Urodzenia</td>
+        <td>dsgDS</td>
+        <td>sgsdg</td>
+      </tr>
+    </tbody>
+
+
+</table>
+</div>
+-->
+</div>
+</body>

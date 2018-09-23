@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>Nie wiem co</title>
+
+  <style>
+.container {
+  padding: 10px;
+  box-shadow: 10px;
+}
+
+img {
+    width: 100%; /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+  </style>
+</head>
+
+<body>
+
+<forms>
+  <p>Wpisz imię:<input type='text' placeholder='twoje imie pało'></p>
+  <!-- value spowoduje wyświetlenie stringu, ALE trzeba go usunąć
+        placeholder wyświetla tekst jako blank background -->
+  <p>Czy chcesz placków?: <input type='checkbox'></p>
+  <p>Czy masz powyżej 18 lat?: <input type='radio' name='ID'></p> <!-- żeby działały rozłącznie, w typie either/or, muszą mieć ten sam ID -->
+  <p>Czy masz poniżej 18 lat?: <input type='radio' name='ID'></p> <!-- żeby działały jednocześnie, muszą mieć inne ID -->
+  <p> Czy lubisz placki?
+    <select>
+      <option>kocham</option>
+      <option selected>tak</option> <!-- SELECTED sprawia że ten <option> wyświetla się jako default z tej listy -->
+      <option>100</option>
+      <option>poproszę daw pięćdziesiąt</option>
+    </select>
+  </p>
+  <p><input type='submit' value='klikaj tu!!!111'></p>
+</forms>
+
+</body>
