@@ -1,0 +1,99 @@
+
+<html>
+
+    <head>
+
+        <title>Webpage With Style</title>
+
+        <style type="text/css">
+
+            .red {
+
+                color:red;
+
+            }
+
+            .large {
+
+                font-size: 200%;
+
+            }
+
+            body {
+              margin: 0px; /* results in zero spacing between top and box */
+              padding: 0px; /* --\\-- */
+            }
+
+            #green {
+
+                color:green;
+            }
+
+            .underlined {
+
+                text-decoration: underline;
+
+            }
+
+            #first-section {
+
+                color:#4285F4;
+                background-color: #CEF6CE;
+                width:200px;
+                margin-left: 100px; /* margin robi to dokładnie dookoła całego boxu, 100px w każdym kierunku */
+                padding: 10px;
+
+
+                /* position: relative; position relative to where it ought to be according to syntax */
+                /*position: absolute; /*taka, w której ta klasa jest absolutnie nad wszystkim innym, alligned to top left */
+                /* position: fixed; /* też on top left, ale przy scrollowaniu strony, zostaje w miejscu swoim miejscu, niezależnie od kierunku scrolla*/
+            }
+
+            #second-section {
+
+                background-color: #8AB4F7;
+                width: 200px;
+                margin: 100px;
+
+                /*
+                position: relative;
+                left: 100px;
+                top: 100px; /*negatitve number means that we move into another direction than the syntactic one */
+                /* z-index: 1; ta klasa, która ma wyższy z-index --> będzie nad, jeśli chodzi o relację w 2D */
+            }
+
+
+            .clear { /*jak wyczyścić floaty które były na górze */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="first-section">
+
+            <p>The quick brown fox jumped over the lazy dog.</p>
+
+            <p>Wow, I love internal CSS!</p>
+
+        </div>
+
+        <div id="second-section">
+
+            <p id="green">This is some more text. <span class="underlined">And this text is underlined.</span></p>
+
+            <h1 class="red">CSS is cool!</h1>
+
+        </div>
+
+        <!-- wszystko co nie jest floated, pójdzie na środek, niezależnie od innych floatów -->
+        <div class="clear"> <!-- clear, klasa w której 'wyczyszczę' floaty -->
+          <p> Unfloat </p>
+        </div>
+
+
+    </body>
+
+</html>
